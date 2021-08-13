@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 
-<robot name="my_new_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
   <xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
 
   <link name="robot_footprint"></link>
@@ -59,14 +59,14 @@
     <collision name='collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".45 .2 .1"/>
+        <box size=".4 .2 .1"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".45 .2 .1"/>
+        <box size=".4 .2 .1"/>
       </geometry>
     </visual>
 
