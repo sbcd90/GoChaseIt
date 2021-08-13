@@ -33,7 +33,7 @@ public:
     }
 
     void process_image_callback(const sensor_msgs::Image image) {
-        auto pixel_range = std::make_pair(1, 255);
+        auto white_pixel = 255;
 
         auto left = std::make_pair(0, image.step/3);
         auto mid = std::make_pair(image.step/3, (2 * image.step)/3);
@@ -41,7 +41,10 @@ public:
 
         bool ball_found = false;
         for (int i = 0; i < image.height * image.step; ++i) {
-            if (image.data[i] == 255 || image.data[i] == 224) {
+            if (i+1 < image.height * image.step &&
+            i+2 < image.height * image.step &&
+            image.data[i] == white_pixel && image.data[i+1] == white_pixel &&
+            image.data[i+2] == white_pixel) {
                 int cur_step = i % image.step;
 
                 if (cur_step >= left.first && cur_step < left.second) {

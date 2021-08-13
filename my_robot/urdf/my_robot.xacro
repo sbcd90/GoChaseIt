@@ -59,14 +59,14 @@
     <collision name='collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <box size=".45 .2 .2"/>
+        <box size=".45 .2 .1"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <box size=".45 .2 .2"/>
+        <box size=".45 .2 .1"/>
       </geometry>
     </visual>
 
@@ -74,28 +74,28 @@
     <collision name='back_caster_collision'>
       <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
-        <sphere radius="0.0599"/>
+        <sphere radius="0.0499"/>
       </geometry>
     </collision>
 
     <visual name='back_caster_visual'>
       <origin xyz="-0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
-        <sphere radius="0.06"/>
+        <sphere radius="0.05"/>
       </geometry>
     </visual>
 
     <collision name='front_caster_collision'>
       <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
-        <sphere radius="0.0599"/>
+        <sphere radius="0.0499"/>
       </geometry>
     </collision>
 
     <visual name='front_caster_visual'>
       <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
-        <sphere radius="0.06"/>
+        <sphere radius="0.05"/>
       </geometry>
     </visual>
 
@@ -119,14 +119,14 @@
     <collision name="collision">
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder radius=".11" length="0.05"/>
+        <cylinder radius=".1" length="0.05"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder radius=".11" length="0.05"/>
+        <cylinder radius=".1" length="0.05"/>
       </geometry>
     </visual>
   </link>
@@ -149,14 +149,14 @@
     <collision name="collision">
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder radius=".11" length="0.05"/>
+        <cylinder radius=".1" length="0.05"/>
       </geometry>
     </collision>
 
     <visual>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
-        <cylinder radius=".11" length="0.05"/>
+        <cylinder radius=".1" length="0.05"/>
       </geometry>
     </visual>
   </link>
